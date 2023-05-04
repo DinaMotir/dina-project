@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="beugeo cars">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beugeo Cars</title>
+<body>
+    <div class="nav">
+        <ul>
+            <li class="selected"><a href="">Home</a></li>
+            <li><a href="htmlPages.html">About</a></li>
+            <li><a href="htmlPages.html">features</a></li>
+        </ul>
+    </div>
+    <div class="container">
+        <div class="content">
+            <img src="C:\Users\hamad\Desktop\project dina\2008.jpg">
+            <p>beugeo2008</p>
+            <P>362,990 L.E</P>
+            <button>Buy</button>
+        </div>
+        <div class="content">
+            <img src="C:\Users\hamad\Desktop\project dina\5008.jpg">
+            <p>beugeo5008</p>
+            <p>575,990 L.E</p>
+            <button>Buy</button>
+        </div>
+        <div class="content">
+        <img src="C:\Users\hamad\Desktop\project dina\3008.jpg">
+        <p>beugeo3008</p>
+        <P>465,000 L.E</L></P>
+        <button>Buy</button>
+        </div>
+        <div class="content">
+            <img src="C:\Users\hamad\Desktop\project dina\301.jpg">
+            <p>beugeo301</p>
+            <p>245,990 L.E</p>
+            <button>Buy</button>
+        </div>
+        <div class="content">
+            <img src="C:\Users\hamad\Desktop\project dina\508.jpg">
+            <p>beugeo508</button>
+            <p>489,900 L.E</p>
+            <button>Buy</button>
+        </div>
+    
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --main-color: #000;
+    --bg: #555;
+    --sub-color: #0481aa;
+    --btn-color: rgb(29, 104, 204);
+}
+.nav{
+    width: 100vw;
+    height: 59px;
+    background-color: var(--bg);
+}
+.nav ul{
+    display: flex;
+    list-style: none;
+}
+.nav ul li{
+    margin: 0 15px;
+    padding: 18px 25px ;
+}
+.nav ul li a{
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+}
+.nav ul li:hover{
+    background-color:var(--sub-color) ;
+}
+.selected{
+    background-color: var(--sub-color);
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: center;
+    align-items: flex-start; */
+    margin: 0 auto;
+}
+.container .content{
+    background-color: var(--main-color);
+    width: 280px;
+    height: 350px;
+    text-align: center;
+    color: var(--sub-color);
+    box-shadow: 0 4px 21px -12px rgba(0, 0, 0, 0.79);
+    border-radius: 20px;
+    margin: 15px 15px;
+}
+.container .content img{
+    width: 100%;
+    height: 50%;
+    border-radius: 20px;
+}
+.container .content p{
+    margin-top: 30px;
+}
+.container .content .p::after{ 
+    margin-left: 30px;
+    text-decoration: line-through;
+    color: var(--bg);
+}
+.container .content button{
+    width: 40%;
+    height: 30px;
+    background-color: var(--btn-color);
+    outline: none;
+    border: var(--main-color);
+    color: var(--main-color);
+    font-size: 20px;
+    border-radius: 30px;
+    margin-top: 35px;
+}
+.container .content button:hover{
+    background-color:rgb(10, 78, 197) ;
+    transform: scale(1.1 , 1.1);
+    cursor: pointer;
+}
+    </style>
+</head>
+        <p>The Peugeot car has many features, most notably:-
+            <br>
+            Its strong and youthful exterior design.
+            <br>
+            Its spacious interior, which gives the passengers comfort.
+            <br>
+            The size of the rear trunk of the car.
+            <br>
+            Diversity of safety and security means.
+            <br>
+            The performance of the car is very good compared to the competitors.
+            <br>
+            The Peugeot car offers many entertainment facilities.
+            <br>
+            Peugeot is a major brand of a French car company,
+            <br> 
+            which is the second largest car manufacturer in Europe after Volkswagen. 
+            The company's origins go back to 1842 when it manufactured pepper, and then bicycles at the end of the 19th century.
+            <br>
+            Peugeot in Egypt currently provides its customers with 5 models, and the Peugeot 301 is the least expensive car,
+            with a starting price of 245,990 EGP. For those who want to pay more, Peugeot offers the 5008 1-6t-gt-pack at 749,990 EGP.
+            The inventory that Peugeot sells in Egypt contains a group of cars of different sizes and specifications,
+            represented by 2 sedans and 3 four-wheel drives. The total value of the inventory for the French brand is 2,139,870 EGP, 
+            bringing the average price of a Peugeot car in Egypt to 427,974 EGP.
+        </p>
+        <script >
+           var ham=document.querySelector('.container');
+           var nav=document.querySelector('.nav');
+
+           const style=getComputedStyle(nav);
+           ham.addEventListener("click", navopen);
+
+          function navopen(){
+ 	  if (nav.style.display == 'none'){
+		nav.style.display='block';
+	  }
+	    else{
+		nav.style.display='none';
+	        }
+          }
+ 
+        </script>
+</body>
+</html>
